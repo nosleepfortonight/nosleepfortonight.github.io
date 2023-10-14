@@ -141,11 +141,16 @@ footer {
         .title-button {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #70ff75;
+            background-color: #2ba12f;
             color: #fff;
             text-decoration: none;
             margin: 0 10px;
             border-radius: 5px;
+        }
+        .container {
+            flex-direction: column; /* Vertically center content */
+            justify-content: center;
+            width:100%;
         }
 </style>
 </head>
@@ -158,20 +163,24 @@ footer {
             </ul>
         </nav>
     </header>
-
-    <div class="title-container">
-        <h1 class="title-text">Open<span style="color: #00ff0a;">Launcher</span></h1>
-        <h2 class="title-desc">Первый майнкрафт лаунчер сделанный в Донбассе.</h2>
-        <div class="title-buttons">
-            <a class="title-button" href="#">Скачать</a>
-            <a class="title-button" href="https://github.com/fonzyal/openlauncher">Исходный код</a>
+    <div class="container">
+        <div class="title-container">
+            <h1 class="title-text">Open<span style="color: #00ff0a;">Launcher</span></h1>
+            <h2 class="title-desc">Первый майнкрафт лаунчер сделанный в Донбассе.</h2>
+            <div class="title-buttons">
+                <a class="title-button" href="#">Скачать</a>
+                <a class="title-button" href="https://github.com/fonzyal/openlauncher">Исходный код</a>
+            </div>
         </div>
+        <footer>
+            <p>Создатель лаунчера Fonzy</p>
+        </footer>
     </div>
 
+    
 
 
-    <footer>
-        <p>Создатель лаунчера Fonzy</p>
-    </footer>
+
+    
 </body>
 </html>
