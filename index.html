@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&display=swap" rel="stylesheet">
     <style>
     /* Reset some default styles */
+
+    /* Reset some default styles */
 body {
     margin: 0;
     padding: 0;
@@ -87,7 +89,8 @@ a {
         
     .projects {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line when the screen is narrow */
+  justify-content: space-between; /* Adjust the alignment as needed */
 }
 
 .project-card {
@@ -95,7 +98,7 @@ a {
   border-radius: 10px;
   padding: 20px;
   margin: 10px;
-  width: 300px;
+  width: 45%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -140,6 +143,7 @@ button {
 button:hover {
     background-color: #6c00a6; /* Button background color on hover */
 }
+
 </style>
 </head>
 
@@ -161,6 +165,16 @@ button:hover {
   <div class="project-card">
     <h3>Название проекта 2</h3>
     <p>Описание проекта 2. Можно добавить несколько предложений о проекте.</p>
+    <button>Тестовая кнопка</button>
+  </div>
+  <div class="project-card">
+    <h3>Название проекта 3</h3>
+    <p>Описание проекта 3. Можно добавить несколько предложений о проекте.</p>
+    <button>Тестовая кнопка</button>
+  </div>
+  <div class="project-card">
+    <h3>Название проекта 4</h3>
+    <p>Описание проекта 4. Можно добавить несколько предложений о проекте.</p>
     <button>Тестовая кнопка</button>
   </div>
   <!-- Добавьте дополнительные карточки проектов по аналогии -->
