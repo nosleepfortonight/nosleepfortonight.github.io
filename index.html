@@ -16,18 +16,27 @@ body {
     color: #fff; /* White text color */
     font-family: Arial, sans-serif;
 }
-@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
-.gradient-text {
-  font-family: 'Rubik One', sans-serif;
-  font-size: 50px;
-  text-transform: uppercase;
-  background: linear-gradient(45deg, #4AF3FF 33%, #B300FF 66%, #FF00FF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #0B2349;
-  display: table;
-  margin: 20px auto;
-  font-weight:bold;
+.gr {
+	background: linear-gradient(45deg, #4AF3FF 33%, #B300FF 66%, #FF00FF);
+	background-size: 300%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: 5vw;
+	letter-spacing: -5px;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 5s ease-in-out infinite;
+	-moz-animation: animated_text 10s ease-in-out infinite;
+	-webkit-animation: animated_text 10s ease-in-out infinite;
+    display: table;
+    margin: 20px auto;
+}
+
+@keyframes animated_text {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
 }
 /* Header styles */
 header {
@@ -68,6 +77,12 @@ a {
     color: #0078d4; /* Link color */
 }
 
+.title-containter {
+    display: table;
+    margin: 20px auto;
+}
+        
+
 
 
 /* Media query for responsiveness */
@@ -100,7 +115,11 @@ a {
     </header>
 
     <section>
-        <p class="gradient-text">Nosleepfortonight</p>
+        <div class="title-containter">
+            <p class="gr">Nosleepfortonight</p>
+            <p>Добро пожаловать на мой САЙТ!</p>
+        </div>
+        
     </section>
 </body>
 </html>
