@@ -85,7 +85,37 @@ a {
     margin: 20px auto;
 }
         
+    .projects {
+  display: flex;
+  justify-content: space-between;
+}
 
+.project-card {
+  background: linear-gradient(135deg, #30fcff, #a100ff, #ff00f5);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+    color: #fff;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #fff;
+  font-family: 'Source Sans 3'
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
 
 
 /* Media query for responsiveness */
@@ -115,7 +145,20 @@ a {
             <p class="gr">Nosleepfortonight</p><br>
             <p style="text-align: center; font-family: 'Source Sans 3';">Добро пожаловать на мой САЙТ! Тут есть много всего, но это лишь малая часть вселенной интернета.<br>Тут будут туториалы связанные с программированием, написанием модов для Mindustry и ГД, а также созданием плагинов для Майнкрафт серверов.</p>
         </div>
-        
     </section>
+    <section class="projects">
+  <div class="project-card">
+    <img src="project1.jpg" alt="Project 1">
+    <h3>Название проекта 1</h3>
+    <p>Описание проекта 1. Можно добавить несколько предложений о проекте.</p>
+  </div>
+  <div class="project-card">
+    <img src="project2.jpg" alt="Project 2">
+    <h3>Название проекта 2</h3>
+    <p>Описание проекта 2. Можно добавить несколько предложений о проекте.</p>
+  </div>
+  <!-- Добавьте дополнительные карточки проектов по аналогии -->
+</section>
+
 </body>
 </html>
