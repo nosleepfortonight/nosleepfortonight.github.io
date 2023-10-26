@@ -16,7 +16,18 @@ body {
     color: #fff; /* White text color */
     font-family: Arial, sans-serif;
 }
-
+@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+.gradient-text {
+  font-family: 'Rubik One', sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #4AF3FF 33%, #B300FF 66%, #FF00FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin: 20px auto;
+}
 /* Header styles */
 header {
     background-color: #333; /* Dark header background color */
@@ -56,27 +67,13 @@ a {
     color: #0078d4; /* Link color */
 }
 
-/* Footer styles */
-footer {
-    background-color: #333; /* Dark footer background color */
-    padding: 10px;
-    text-align: center;
-}
 
-/* Project styles */
-.project {
-    background-color: #333; /* Dark project background color */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
 
 /* Media query for responsiveness */
 @media (max-width: 768px) {
     /* Add responsive styles here */
 }
-.project button {
+.button {
     background-color: #ad00ff; /* Button background color */
     color: #fff; /* Button text color */
     border: none;
@@ -101,27 +98,8 @@ footer {
         </nav>
     </header>
 
-    <section id="home">
-        <h1>Добро пожаловать на мой сайт</h1>
-        <p>На этом сайте есть кое-что интересное.</p>
+    <section>
+        
     </section>
-
-    <section id="about">
-        <h2>Обо мне</h2>
-        <p>Школьник который любит писать говно-код.</p>
-    </section>
-
-    <section id="portfolio">
-        <h2>Проекты и страницы</h2>
-        <div class="project">
-            <h3>OpenLauncher</h3>
-            <p>Лаунчер для майнкрафт с открытым кодом.</p>
-            <button onclick="location.href='/openlauncher.html';" title="Посмотреть страницу на гитхабе">Перейти на страницу</button> <!-- Add a button -->
-        </div>
-    </section>
-
-    <footer>
-        <p>Made by Fonzy</p>
-    </footer>
 </body>
 </html>
