@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 12</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&display=swap" rel="stylesheet">
+    <style>
+    /* Reset some default styles */
+
+    /* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Dark background color */
+    color: #fff; /* White text color */
+    font-family: Arial, sans-serif;
+}
+.gr {
+	background: linear-gradient(45deg, #4AF3FF 33%, #B300FF 66%, #FF00FF);
+	background-size: 300%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: 5vw;
+	letter-spacing: -5px;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 5s ease-in-out infinite;
+	-moz-animation: animated_text 10s ease-in-out infinite;
+	-webkit-animation: animated_text 10s ease-in-out infinite;
+    display: table;
+    margin: 20px auto;
+}
+
+@keyframes animated_text {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
+}
+/* Header styles */
+header {
+    background-color: #333; /* Dark header background color */
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Section styles */
+section {
+    padding: 40px;
+}
+
+h1, h2, h3 {
+    color: #fff; /* White heading text color */
+}
+
+/* Link styles */
+a {
+    color: #0078d4; /* Link color */
+}
+
+.title-containter {
+    display: table;
+    margin: 20px auto;
+}
+        
+    .projects {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line when the screen is narrow */
+  justify-content: space-between; /* Adjust the alignment as needed */
+}
+
+.project-card {
+  background: linear-gradient(45deg, #0050ff, #db068c);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 40%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+    color: #fff;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #fff;
+  font-family: 'Source Sans 3'
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    width: calc(50% - 20px); /* Two cards per row on screens smaller than 768px */
+  }
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    /* Add responsive styles here */
+}
+button {
+    background-color: #a600ff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6c00a6; /* Button background color on hover */
+}
+.container {
+    max-width: 1200px; /* Set the maximum width for your container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding inside the container */
+}
+</style>
+</head>
+
+<body>
+    <div class="container">
+    <section>
+        <div class="title-containter">
+            <p class="gr">Windows 12</p><br>
+            <p style="text-align: center; font-family: 'Source Sans 3';">Тут можно найти установщик Windows 12 Pro.</p>
+        </div>
+    </section>
+    </div>
+
+</body>
+</html>
