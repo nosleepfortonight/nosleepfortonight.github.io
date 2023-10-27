@@ -165,6 +165,21 @@ button:hover {
     margin: 0 auto; /* Center the container horizontally */
     padding: 20px; /* Add padding inside the container */
 }
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  7px); }
+    50%  { transform: translate(0, -7px); }
+    100%   { transform: translate(0, 7px); }    
+}
+
 </style>
 </head>
 
@@ -177,9 +192,11 @@ button:hover {
         </div>
     </section>
     <h2>Почему стоит переходить?</h2>
-    <p><p class="st">Windows 12</p> - революционнная система, она очень оптимизирована и имеет большой функционал.</p>
+    <p>Windows 12 - революционнная система, она очень оптимизирована и имеет большой функционал.</p>
     <h2>Скачать</h2>
-    <button>Скачать инсталлер</button>
+    <div class="floating">
+	<button>Скачать инсталлер</button>
+    </div>
     <h2>Требования системы</h2>
     <p>- Хотя бы 64 ГБ Памяти на жестком диске<br>- Компьютер, на который вы устанавливаете операционную систему, должен иметь карту, совместимую с DirectX 12 или новее, и драйвером WDDM 2.0.<br>- Вам нужна система UEFI, поддерживающая безопасную загрузку. Кроме того, ваша плата должна иметь модуль доверенной платформы во второй версии или TPM 2.0.<br>- Разрешение вашего экрана должно быть HD. Или что то же самое, иметь разрешение 720р. Windows 11 работает только на мониторах размером 9 дюймов и более, которые способны воспроизводить 8 бит на цветовой канал.</p>
     <footer>Сделал NoTimeForSleep 2023</footer>
