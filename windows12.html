@@ -39,7 +39,22 @@ footer {
     display: table;
     margin: 20px auto;
 }
-
+.st {
+	background: linear-gradient(45deg, #4AF3FF 33%, #B300FF 66%, #FF00FF);
+	background-size: 300%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: 16px;
+	letter-spacing: -5px;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 5s ease-in-out infinite;
+	-moz-animation: animated_text 10s ease-in-out infinite;
+	-webkit-animation: animated_text 10s ease-in-out infinite;
+    display: table;
+    margin: 20px auto;
+}
 @keyframes animated_text {
 	0% { background-position: 0px 50%; }
 	50% { background-position: 100% 50%; }
@@ -162,7 +177,7 @@ button:hover {
         </div>
     </section>
     <h2>Почему стоит переходить?</h2>
-    <p>Windows 12 - революционнная система, она очень оптимизирована и имеет большой функционал.</p>
+    <p><p class="st">Windows 12</p> - революционнная система, она очень оптимизирована и имеет большой функционал.</p>
     <h2>Скачать</h2>
     <button>Скачать инсталлер</button>
     <h2>Требования системы</h2>
