@@ -148,6 +148,20 @@ button:hover {
     margin: 0 auto; /* Center the container horizontally */
     padding: 20px; /* Add padding inside the container */
 }
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  7px); }
+    50%  { transform: translate(0, -7px); }
+    100%   { transform: translate(0, 7px); }    
+}
 </style>
 </head>
 
@@ -167,9 +181,9 @@ button:hover {
     <button onclick="location.href='https://github.com/nosleepfortonight/FruitSpaceAPI2';">Перейти</button>
   </div>
   <div class="project-card">
-    <h3>Название проекта 2</h3>
-    <p>Описание проекта 2. Можно добавить несколько предложений о проекте.</p>
-    <button onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley';">Тестовая кнопка</button>
+    <h3>Windows 12</h3>
+    <p>Шуточный вирус, который делает из себя вид инсталлера.</p>
+    <button onclick="location.href='/windows12.html';">Перейти</button>
   </div>
   <div class="project-card">
     <h3>Название проекта 3</h3>
