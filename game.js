@@ -1,8 +1,8 @@
 const canvas = document.getElementById('maincanvas');
 const ctx = canvas.getContext('2d');
 
-const CANVAS_WIDTH = canvas.width = window.innerWidth;
-const CANVAS_HEIGHT = canvas.height = window.innerHeight;
+let CANVAS_WIDTH = canvas.width = window.innerWidth;
+let CANVAS_HEIGHT = canvas.height = window.innerHeight;
 
 const img = new Image();
 img.src = "GHost.png";
@@ -180,12 +180,12 @@ document.addEventListener('keyup', function(event) {
     keys[event.keyCode] = false;
     
 });
-const myPopup = new Popup(CANVAS_WIDTH/2-150, CANVAS_HEIGHT/2-100, 300, 200, 'This is my test site made\nwith canvas and js.');
+let myPopup = new Popup(CANVAS_WIDTH/2-150, CANVAS_HEIGHT/2-100, 300, 200, 'This is my test site made\nwith canvas and js.');
 
 window.addEventListener('resize', function(event) {
-    const CANVAS_WIDTH = canvas.width = window.innerWidth;
-    const CANVAS_HEIGHT = canvas.height = window.innerHeight;
-    const myPopup = new Popup(CANVAS_WIDTH/2-150, CANVAS_HEIGHT/2-100, 300, 200, 'This is my test site made\nwith canvas and js.');
+    CANVAS_WIDTH = canvas.width = window.innerWidth;
+    CANVAS_HEIGHT = canvas.height = window.innerHeight;
+    myPopup = new Popup(CANVAS_WIDTH/2-150, CANVAS_HEIGHT/2-100, 300, 200, 'This is my test site made\nwith canvas and js.');
 }, true);
 const button1 = new RoundedButton(50, 50, 50, 50, 5, '?', 'white', () => {
     myPopup.show();
