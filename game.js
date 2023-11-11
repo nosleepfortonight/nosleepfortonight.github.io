@@ -180,12 +180,13 @@ document.addEventListener('keyup', function(event) {
     keys[event.keyCode] = false;
     
 });
+const myPopup = new Popup(CANVAS_WIDTH/2-150, CANVAS_HEIGHT/2-100, 300, 200, 'This is my test site made\nwith canvas and js.');
+
 window.addEventListener('resize', function(event) {
     const CANVAS_WIDTH = canvas.width = window.innerWidth;
     const CANVAS_HEIGHT = canvas.height = window.innerHeight;
+    const myPopup = new Popup(CANVAS_WIDTH/2-150, CANVAS_HEIGHT/2-100, 300, 200, 'This is my test site made\nwith canvas and js.');
 }, true);
-const myPopup = new Popup(CANVAS_WIDTH/2-150, CANVAS_HEIGHT/2-100, 300, 200, 'This is my test site made\nwith canvas and js.');
-
 const button1 = new RoundedButton(50, 50, 50, 50, 5, '?', 'white', () => {
     myPopup.show();
 });
