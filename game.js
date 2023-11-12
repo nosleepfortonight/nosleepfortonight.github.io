@@ -290,7 +290,7 @@ window.addEventListener('resize', function(event) {
     myPopup = new Popup(CANVAS_WIDTH/2-150, CANVAS_HEIGHT/2-100, 300, 200, 'Это моя тестовая игруля на JS.');
 }, true);
 let inactive_arrow = new Image();
-inactive_arrow.src = 'inactive-arrow.png';
+inactive_arrow.src = 'pixil-frame-0 (5).png';
 const button1 = new RoundedButton(25, 25, 50, 50, 5, '?', 'white', () => {
     myPopup.show();
 });
