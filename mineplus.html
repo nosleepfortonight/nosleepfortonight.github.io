@@ -18,9 +18,19 @@ body {
     background-color: #1e1e1e; /* Dark background color */
     color: #fff; /* White text color */
     font-family: Arial, sans-serif;
-    background-image: url('https://i.pinimg.com/originals/0d/25/71/0d257169b1f7b036472973d8666f1af4.png'); /* Replace with the path to your image */
+    background: url('https://get.wallhere.com/photo/Minecraft-building-2223732.jpg') fixed;
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to control darkness */
+  z-index: -1;
 }
 footer {
   text-align: center;
