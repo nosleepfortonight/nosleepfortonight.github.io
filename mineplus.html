@@ -23,7 +23,8 @@ body {
     background-position: center;
     position: relative;
 }
-.overlay {
+body::before {
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -31,6 +32,9 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to control darkness */
   z-index: -1;
+}
+.subtitle {
+  color: #d7d7d7;
 }
 footer {
   text-align: center;
@@ -201,7 +205,7 @@ button:hover {
     <section>
         <div class="title-containter">
             <p class="gr">MINEPLUS</p><br>
-            <p style="text-align: center; font-family: 'Source Sans 3';">Русскоязычный внутре политический сервер</p>
+            <p style="text-align: center; font-family: 'Source Sans 3'; color: #d7d7d7;">Русскоязычный внутре политический сервер</p>
         </div>
     </section>
 	<h2>Преимущества <i class="fa fa-star" aria-hidden="true"></i></h2>
