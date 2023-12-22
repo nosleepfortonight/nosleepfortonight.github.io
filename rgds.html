@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>RGDS</title>
+    <mate name="description" content="Официальная страница ГДС RGDS">
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    max-width: 30%; /* Делаем изображение адаптивным */
+    height: auto;
+}
+.gradtext {
+    font-size: 124px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #9200ff, #00edff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.blurred-navbar {
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Blurry effect */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+}
+.button {
+  padding: 10px 20px; /* Add padding to the button */
+  background-color: #8e00ff; /* Set the background color */
+  color: white; /* Set the text color */
+  border: none; /* Remove the border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  display: inline;
+}
+
+.button:hover {
+  background-color: #5e00a8; /* Change the background color on hover */
+}
+/* Other styles remain the same */
+
+/* Other styles remain the same */
+
+.content {
+  padding-top: 70px; /* Add padding to the top to prevent content from being hidden behind the navbar */
+  padding-left: 20px; /* Add padding to the left side of the content */
+  padding-right: 20px; /* Add padding to the right side of the content */
+}
+
+.blurred-navbar {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Position it at the top of the screen */
+  width: 100%; /* Take up the full width of the screen */
+  z-index: 100; /* Ensure it's on top of other content */
+  backdrop-filter: blur(10px); /* Apply a blur filter to the navbar */
+  background-color: rgba(0, 0, 0, 0.3); /* Set the background color with transparency */
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.blurred-navbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Move the blurred background behind the navbar */
+  backdrop-filter: blur(10px); /* Apply a blur filter to the background */
+}
+
+</style>
+<body>
+    <div class="container">
+        <nav class="blurred-navbar">
+    <div class="logo">
+        <a href='/'>
+            <img src="imgs/smallsize.png" alt="Logo">
+        </a>
+    </div>
+        <ul class="nav-links">
+            <center>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+            </center>
+        </ul>
+        </nav>
+        <header>
+            <img src="imgs/transparent.png" alt="Ваш логотип" class="logo">
+        </header>
+        <div>
+            <p><span class='gradient-text'>RGDS</span> - это стремительно растущий и развивающийся сервер, один из самых в РК.<br>На сервере есть моды и разные дополнения (включая защиту от ддос атак) которые помогают вам быть в комфорте.</p>
+        </div>
+        <div>
+            <button class='button' onclick="location.href='/download';">Скачать</button>
+            <h2>Наши преимущества</h2>
+            <p>- У нас есть защита от ДДОС атак<br>- У нас есть моды для ПК клиентов, они улучшают игровой процесс.<br>- У нас есть свой дискорд сервер, вы можете общаться с сообществом!</p>
+        </div>
+    </div>
+</body>
+</html>
